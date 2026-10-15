@@ -1,0 +1,522 @@
+[
+  {
+    "id": "case_01",
+    "name": "Gold Solitaire Ring",
+    "category": "ring",
+    "brief": "Looking for an 18k gold solitaire engagement ring, 18.1mm inner diameter with 1 diamond.",
+    "image_file": "ring_solitaire_1.png",
+    "ground_truth": {
+      "product_type": "ring",
+      "material": "gold",
+      "dimensions_mm": 18.1,
+      "stone_count": 1,
+      "target_sku": "JWL-RNG-002",
+      "expected_match_accepted": true,
+      "visible_stone_count": 1
+    },
+    "mock_extraction": {
+      "product_type": "ring",
+      "material": "gold",
+      "dimensions_mm": 18.1,
+      "stone_count": 1
+    },
+    "metadata": {
+      "brief_type": "complete",
+      "description": "Standard complete brief with matching solitaire image."
+    }
+  },
+  {
+    "id": "case_02",
+    "name": "Silver Plain Band Ring",
+    "category": "ring",
+    "brief": "Simple sterling silver band ring, 17mm, plain with no stones.",
+    "image_file": "ring_plain_0.png",
+    "ground_truth": {
+      "product_type": "ring",
+      "material": "silver",
+      "dimensions_mm": 17.0,
+      "stone_count": 0,
+      "target_sku": "JWL-RNG-004",
+      "expected_match_accepted": true,
+      "visible_stone_count": 0
+    },
+    "mock_extraction": {
+      "product_type": "ring",
+      "material": "silver",
+      "dimensions_mm": 17.0,
+      "stone_count": 0
+    },
+    "metadata": {
+      "brief_type": "complete",
+      "description": "Plain silver band with 0 visible stones in reference image."
+    }
+  },
+  {
+    "id": "case_03",
+    "name": "Platinum Pavé Diamond Ring",
+    "category": "ring",
+    "brief": "Platinum diamond ring with 24 pavé stones around the band, diameter 18.9mm.",
+    "image_file": null,
+    "ground_truth": {
+      "product_type": "ring",
+      "material": "platinum",
+      "dimensions_mm": 18.9,
+      "stone_count": 24,
+      "target_sku": "JWL-RNG-008",
+      "expected_match_accepted": true,
+      "visible_stone_count": null
+    },
+    "mock_extraction": {
+      "product_type": "ring",
+      "material": "platinum",
+      "dimensions_mm": 18.9,
+      "stone_count": 24
+    },
+    "metadata": {
+      "brief_type": "complete",
+      "description": "High stone-count platinum ring without reference image."
+    }
+  },
+  {
+    "id": "case_04",
+    "name": "Gold Halo Pendant",
+    "category": "pendant",
+    "brief": "18k yellow gold pendant with 9 halo accent diamonds, height 28mm.",
+    "image_file": null,
+    "ground_truth": {
+      "product_type": "pendant",
+      "material": "gold",
+      "dimensions_mm": 28.0,
+      "stone_count": 9,
+      "target_sku": "JWL-PND-003",
+      "expected_match_accepted": true,
+      "visible_stone_count": null
+    },
+    "mock_extraction": {
+      "product_type": "pendant",
+      "material": "gold",
+      "dimensions_mm": 28.0,
+      "stone_count": 9
+    },
+    "metadata": {
+      "brief_type": "complete",
+      "description": "Gold multi-stone pendant matching catalog record."
+    }
+  },
+  {
+    "id": "case_05",
+    "name": "Silver Solitaire Pendant",
+    "category": "pendant",
+    "brief": "Sterling silver pendant featuring 1 center gemstone, measuring 24mm drop.",
+    "image_file": null,
+    "ground_truth": {
+      "product_type": "pendant",
+      "material": "silver",
+      "dimensions_mm": 24.0,
+      "stone_count": 1,
+      "target_sku": "JWL-PND-005",
+      "expected_match_accepted": true,
+      "visible_stone_count": null
+    },
+    "mock_extraction": {
+      "product_type": "pendant",
+      "material": "silver",
+      "dimensions_mm": 24.0,
+      "stone_count": 1
+    },
+    "metadata": {
+      "brief_type": "complete",
+      "description": "Silver single-stone drop pendant."
+    }
+  },
+  {
+    "id": "case_06",
+    "name": "Classic Gold Chain Necklace",
+    "category": "necklace",
+    "brief": "Classic gold chain necklace, 420mm length, no gemstones or accents.",
+    "image_file": null,
+    "ground_truth": {
+      "product_type": "necklace",
+      "material": "gold",
+      "dimensions_mm": 420.0,
+      "stone_count": 0,
+      "target_sku": "JWL-NCK-001",
+      "expected_match_accepted": true,
+      "visible_stone_count": null
+    },
+    "mock_extraction": {
+      "product_type": "necklace",
+      "material": "gold",
+      "dimensions_mm": 420.0,
+      "stone_count": 0
+    },
+    "metadata": {
+      "brief_type": "complete",
+      "description": "Plain chain necklace without stones."
+    }
+  },
+  {
+    "id": "case_07",
+    "name": "Silver Station Necklace",
+    "category": "necklace",
+    "brief": "Sterling silver chain necklace, 450mm length with 3 evenly spaced round stones.",
+    "image_file": "necklace_station_3.png",
+    "ground_truth": {
+      "product_type": "necklace",
+      "material": "silver",
+      "dimensions_mm": 450.0,
+      "stone_count": 3,
+      "target_sku": "JWL-NCK-005",
+      "expected_match_accepted": true,
+      "visible_stone_count": 3
+    },
+    "mock_extraction": {
+      "product_type": "necklace",
+      "material": "silver",
+      "dimensions_mm": 450.0,
+      "stone_count": 3
+    },
+    "metadata": {
+      "brief_type": "complete",
+      "description": "3-stone station necklace with corresponding 3-stone reference image."
+    }
+  },
+  {
+    "id": "case_08",
+    "name": "Platinum Statement Choker",
+    "category": "necklace",
+    "brief": "Platinum choker necklace, length 420mm with 36 sparkling diamonds.",
+    "image_file": null,
+    "ground_truth": {
+      "product_type": "necklace",
+      "material": "platinum",
+      "dimensions_mm": 420.0,
+      "stone_count": 36,
+      "target_sku": "JWL-NCK-008",
+      "expected_match_accepted": true,
+      "visible_stone_count": null
+    },
+    "mock_extraction": {
+      "product_type": "necklace",
+      "material": "platinum",
+      "dimensions_mm": 420.0,
+      "stone_count": 36
+    },
+    "metadata": {
+      "brief_type": "complete",
+      "description": "High-end choker with large stone count."
+    }
+  },
+  {
+    "id": "case_09",
+    "name": "Gold Tennis Bracelet",
+    "category": "bracelet",
+    "brief": "18k gold tennis bracelet, 190mm wrist circumference with 32 small round diamonds.",
+    "image_file": null,
+    "ground_truth": {
+      "product_type": "bracelet",
+      "material": "gold",
+      "dimensions_mm": 190.0,
+      "stone_count": 32,
+      "target_sku": "JWL-BRC-003",
+      "expected_match_accepted": true,
+      "visible_stone_count": null
+    },
+    "mock_extraction": {
+      "product_type": "bracelet",
+      "material": "gold",
+      "dimensions_mm": 190.0,
+      "stone_count": 32
+    },
+    "metadata": {
+      "brief_type": "complete",
+      "description": "Tennis bracelet matching inventory dimensions and stone count."
+    }
+  },
+  {
+    "id": "case_10",
+    "name": "Silver Minimalist Cuff",
+    "category": "bracelet",
+    "brief": "Solid silver cuff bracelet, 170mm size, minimalist without stones.",
+    "image_file": null,
+    "ground_truth": {
+      "product_type": "bracelet",
+      "material": "silver",
+      "dimensions_mm": 170.0,
+      "stone_count": 0,
+      "target_sku": "JWL-BRC-004",
+      "expected_match_accepted": true,
+      "visible_stone_count": null
+    },
+    "mock_extraction": {
+      "product_type": "bracelet",
+      "material": "silver",
+      "dimensions_mm": 170.0,
+      "stone_count": 0
+    },
+    "metadata": {
+      "brief_type": "complete",
+      "description": "Plain silver cuff bracelet."
+    }
+  },
+  {
+    "id": "case_11",
+    "name": "Gold Stud Earrings",
+    "category": "earrings",
+    "brief": "Pair of 18k yellow gold stud earrings, 15mm drop with 2 center stones total.",
+    "image_file": null,
+    "ground_truth": {
+      "product_type": "earrings",
+      "material": "gold",
+      "dimensions_mm": 15.0,
+      "stone_count": 2,
+      "target_sku": "JWL-EAR-002",
+      "expected_match_accepted": true,
+      "visible_stone_count": null
+    },
+    "mock_extraction": {
+      "product_type": "earrings",
+      "material": "gold",
+      "dimensions_mm": 15.0,
+      "stone_count": 2
+    },
+    "metadata": {
+      "brief_type": "complete",
+      "description": "Standard gold stud earrings."
+    }
+  },
+  {
+    "id": "case_12",
+    "name": "Platinum Chandelier Earrings",
+    "category": "earrings",
+    "brief": "Platinum chandelier earrings, length 30mm with 22 pave diamonds.",
+    "image_file": null,
+    "ground_truth": {
+      "product_type": "earrings",
+      "material": "platinum",
+      "dimensions_mm": 30.0,
+      "stone_count": 22,
+      "target_sku": "JWL-EAR-008",
+      "expected_match_accepted": true,
+      "visible_stone_count": null
+    },
+    "mock_extraction": {
+      "product_type": "earrings",
+      "material": "platinum",
+      "dimensions_mm": 30.0,
+      "stone_count": 22
+    },
+    "metadata": {
+      "brief_type": "complete",
+      "description": "High complexity platinum chandelier earrings."
+    }
+  },
+  {
+    "id": "case_13",
+    "name": "Incomplete Brief - Missing Dimension",
+    "category": "necklace",
+    "brief": "Customer wants an 18k gold necklace with 5 diamonds, length not specified.",
+    "image_file": "necklace_five_stones_5.png",
+    "ground_truth": {
+      "product_type": "necklace",
+      "material": "gold",
+      "dimensions_mm": null,
+      "stone_count": 5,
+      "target_sku": "JWL-NCK-002",
+      "expected_match_accepted": true,
+      "visible_stone_count": 5
+    },
+    "mock_extraction": {
+      "product_type": "necklace",
+      "material": "gold",
+      "dimensions_mm": null,
+      "stone_count": 5
+    },
+    "metadata": {
+      "brief_type": "incomplete",
+      "description": "Missing length parameter, matched under weight renormalization; verified by 5-stone image."
+    }
+  },
+  {
+    "id": "case_14",
+    "name": "Incomplete Brief - Missing Stone Count",
+    "category": "ring",
+    "brief": "Need a platinum ring, finger size 17.8mm, design details pending.",
+    "image_file": null,
+    "ground_truth": {
+      "product_type": "ring",
+      "material": "platinum",
+      "dimensions_mm": 17.8,
+      "stone_count": null,
+      "target_sku": "JWL-RNG-007",
+      "expected_match_accepted": true,
+      "visible_stone_count": null
+    },
+    "mock_extraction": {
+      "product_type": "ring",
+      "material": "platinum",
+      "dimensions_mm": 17.8,
+      "stone_count": null
+    },
+    "metadata": {
+      "brief_type": "incomplete",
+      "description": "Missing stone count, matched under weight renormalization."
+    }
+  },
+  {
+    "id": "case_15",
+    "name": "Ambiguous Brief - Slang & Stone Discrepancy",
+    "category": "ring",
+    "brief": "Looking for an icy finger band in yellow metal, roughly 16.5mm with about fourteen sparkly rocks.",
+    "image_file": "ring_eight_stones_8.png",
+    "ground_truth": {
+      "product_type": "ring",
+      "material": "gold",
+      "dimensions_mm": 16.5,
+      "stone_count": 14,
+      "target_sku": "JWL-RNG-003",
+      "expected_match_accepted": true,
+      "visible_stone_count": 8
+    },
+    "mock_extraction": {
+      "product_type": "ring",
+      "material": "gold",
+      "dimensions_mm": 16.5,
+      "stone_count": 14
+    },
+    "metadata": {
+      "brief_type": "ambiguous",
+      "description": "Slang phrasing ('icy finger band in yellow metal'). Image has 8 visible stones vs brief 14 stones, intentionally triggering a cross-modal discrepancy review flag."
+    }
+  },
+  {
+    "id": "case_16",
+    "name": "Clustered Gemstone Pendant Challenge",
+    "category": "pendant",
+    "brief": "Platinum pendant with twelve accent stones, 32mm.",
+    "image_file": "pendant_twelve_clustered_12.png",
+    "ground_truth": {
+      "product_type": "pendant",
+      "material": "platinum",
+      "dimensions_mm": 32.0,
+      "stone_count": 12,
+      "target_sku": "JWL-PND-008",
+      "expected_match_accepted": true,
+      "visible_stone_count": 12
+    },
+    "mock_extraction": {
+      "product_type": "pendant",
+      "material": "platinum",
+      "dimensions_mm": 32.0,
+      "stone_count": 12
+    },
+    "metadata": {
+      "brief_type": "cluster_challenge",
+      "description": "Dense pave/cluster setting with 12 touching stones where classical OpenCV merges adjacent contours (detects 10)."
+    }
+  },
+  {
+    "id": "case_17",
+    "name": "No Match - Unsupported Material (Titanium)",
+    "category": "ring",
+    "brief": "Custom titanium wedding ring, 18.0mm diameter, plain band.",
+    "image_file": null,
+    "ground_truth": {
+      "product_type": "ring",
+      "material": null,
+      "dimensions_mm": 18.0,
+      "stone_count": 0,
+      "target_sku": null,
+      "expected_match_accepted": false,
+      "visible_stone_count": null
+    },
+    "mock_extraction": {
+      "product_type": "ring",
+      "material": "titanium",
+      "dimensions_mm": 18.0,
+      "stone_count": 0
+    },
+    "metadata": {
+      "brief_type": "negative_unsupported_material",
+      "description": "Titanium is unsupported by catalog; extraction rejects or nulls material and inventory match must be rejected."
+    }
+  },
+  {
+    "id": "case_18",
+    "name": "No Match - Out-of-Range Low Similarity",
+    "category": "bracelet",
+    "brief": "Extra-long platinum ankle bracelet, length 350mm with 15 accent diamonds.",
+    "image_file": null,
+    "ground_truth": {
+      "product_type": "bracelet",
+      "material": "platinum",
+      "dimensions_mm": 350.0,
+      "stone_count": 15,
+      "target_sku": null,
+      "expected_match_accepted": false,
+      "visible_stone_count": null
+    },
+    "mock_extraction": {
+      "product_type": "bracelet",
+      "material": "platinum",
+      "dimensions_mm": 350.0,
+      "stone_count": 15
+    },
+    "metadata": {
+      "brief_type": "negative_low_similarity",
+      "description": "350mm bracelet is far outside catalog range (max 180mm), candidate score 0.6606 is strictly below 0.70 threshold."
+    }
+  },
+  {
+    "id": "case_19",
+    "name": "Two-Stone Gold Teardrop Pendant",
+    "category": "pendant",
+    "brief": "Two-stone teardrop pendant in 18k yellow gold, roughly 22mm tall with a pair of diamonds.",
+    "image_file": null,
+    "ground_truth": {
+      "product_type": "pendant",
+      "material": "gold",
+      "dimensions_mm": 22.0,
+      "stone_count": 2,
+      "target_sku": "JWL-PND-002",
+      "expected_match_accepted": true,
+      "visible_stone_count": null
+    },
+    "mock_extraction": {
+      "product_type": "pendant",
+      "material": "gold",
+      "dimensions_mm": 22.0,
+      "stone_count": 2
+    },
+    "metadata": {
+      "brief_type": "complete",
+      "description": "Pendant with 2 stones and 22mm height matching JWL-PND-002 (22.5mm, 1 stone) with score 0.9419."
+    }
+  },
+  {
+    "id": "case_20",
+    "name": "Silver Plain Collar Choker",
+    "category": "necklace",
+    "brief": "Silver choker necklace, 400mm length, no stones.",
+    "image_file": null,
+    "ground_truth": {
+      "product_type": "necklace",
+      "material": "silver",
+      "dimensions_mm": 400.0,
+      "stone_count": 0,
+      "target_sku": "JWL-NCK-004",
+      "expected_match_accepted": true,
+      "visible_stone_count": null
+    },
+    "mock_extraction": {
+      "product_type": "necklace",
+      "material": "silver",
+      "dimensions_mm": 400.0,
+      "stone_count": 0
+    },
+    "metadata": {
+      "brief_type": "complete",
+      "description": "Plain silver choker necklace matching JWL-NCK-004."
+    }
+  }
+]

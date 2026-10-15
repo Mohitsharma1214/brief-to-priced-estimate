@@ -1,0 +1,1146 @@
+{
+  "summary": {
+    "dataset_metadata": {
+      "total_cases": 20,
+      "positive_cases": 18,
+      "negative_cases": 2,
+      "image_cases": 6,
+      "execution_mode": "offline_recorded_mock",
+      "total_duration_sec": 0.07
+    },
+    "extraction_accuracy": {
+      "product_type": 0.95,
+      "material": 1.0,
+      "dimensions_mm": 0.95,
+      "stone_count": 0.95,
+      "mean_field_accuracy": 0.9625,
+      "full_specification_exact_match": 0.95,
+      "extraction_failures": 1
+    },
+    "inventory_matching": {
+      "top1_hit_rate": 1.0,
+      "top3_hit_rate": 1.0,
+      "positive_cases_top1_hit_rate": 1.0,
+      "positive_cases_top3_hit_rate": 1.0,
+      "negative_cases_rejection_rate": 1.0,
+      "positive_cases_count": 18,
+      "positive_cases_top1_hits": 18,
+      "positive_cases_top3_hits": 18,
+      "negative_cases_count": 2,
+      "negative_rejections_count": 2,
+      "unmatched_cases_count": 2
+    },
+    "computer_vision": {
+      "image_cases_count": 6,
+      "stone_count_mae": 0.0,
+      "disclaimer": "Evaluated on controlled synthetic geometric fixtures. Does not establish empirical accuracy on real jewelry photographs."
+    },
+    "human_review": {
+      "review_flagged_cases": 4,
+      "review_flag_rate": 0.2
+    }
+  },
+  "cases": [
+    {
+      "id": "case_01",
+      "name": "Gold Solitaire Ring",
+      "category": "ring",
+      "brief": "Looking for an 18k gold solitaire engagement ring, 18.1mm inner diameter with 1 diamond.",
+      "has_image": true,
+      "status_code": 200,
+      "success": true,
+      "extraction": {
+        "predicted": {
+          "product_type": "ring",
+          "material": "gold",
+          "dimensions_mm": 18.1,
+          "stone_count": 1
+        },
+        "ground_truth": {
+          "product_type": "ring",
+          "material": "gold",
+          "dimensions_mm": 18.1,
+          "stone_count": 1
+        },
+        "matches": {
+          "product_type": true,
+          "material": true,
+          "dimensions_mm": true,
+          "stone_count": true,
+          "all": true
+        }
+      },
+      "matching": {
+        "expected_sku": "JWL-RNG-002",
+        "predicted_best_sku": "JWL-RNG-002",
+        "matches_top3": [
+          "JWL-RNG-002",
+          "JWL-RNG-001",
+          "JWL-RNG-003"
+        ],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": 48000.0
+      },
+      "vision": {
+        "image_file": "ring_solitaire_1.png",
+        "ground_truth_stones": 1,
+        "predicted_stones": 1,
+        "absolute_error": 0,
+        "confidence": "high"
+      },
+      "review": {
+        "requires_human_review": false,
+        "flags": []
+      },
+      "errors": [],
+      "latency_ms": 26.58
+    },
+    {
+      "id": "case_02",
+      "name": "Silver Plain Band Ring",
+      "category": "ring",
+      "brief": "Simple sterling silver band ring, 17mm, plain with no stones.",
+      "has_image": true,
+      "status_code": 200,
+      "success": true,
+      "extraction": {
+        "predicted": {
+          "product_type": "ring",
+          "material": "silver",
+          "dimensions_mm": 17.0,
+          "stone_count": 0
+        },
+        "ground_truth": {
+          "product_type": "ring",
+          "material": "silver",
+          "dimensions_mm": 17.0,
+          "stone_count": 0
+        },
+        "matches": {
+          "product_type": true,
+          "material": true,
+          "dimensions_mm": true,
+          "stone_count": true,
+          "all": true
+        }
+      },
+      "matching": {
+        "expected_sku": "JWL-RNG-004",
+        "predicted_best_sku": "JWL-RNG-004",
+        "matches_top3": [
+          "JWL-RNG-004",
+          "JWL-RNG-005",
+          "JWL-RNG-006"
+        ],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": 2800.0
+      },
+      "vision": {
+        "image_file": "ring_plain_0.png",
+        "ground_truth_stones": 0,
+        "predicted_stones": 0,
+        "absolute_error": 0,
+        "confidence": "low"
+      },
+      "review": {
+        "requires_human_review": true,
+        "flags": [
+          "Vision review: Solid or uniform image with zero contrast."
+        ]
+      },
+      "errors": [],
+      "latency_ms": 2.45
+    },
+    {
+      "id": "case_03",
+      "name": "Platinum Pav\u00e9 Diamond Ring",
+      "category": "ring",
+      "brief": "Platinum diamond ring with 24 pav\u00e9 stones around the band, diameter 18.9mm.",
+      "has_image": false,
+      "status_code": 200,
+      "success": true,
+      "extraction": {
+        "predicted": {
+          "product_type": "ring",
+          "material": "platinum",
+          "dimensions_mm": 18.9,
+          "stone_count": 24
+        },
+        "ground_truth": {
+          "product_type": "ring",
+          "material": "platinum",
+          "dimensions_mm": 18.9,
+          "stone_count": 24
+        },
+        "matches": {
+          "product_type": true,
+          "material": true,
+          "dimensions_mm": true,
+          "stone_count": true,
+          "all": true
+        }
+      },
+      "matching": {
+        "expected_sku": "JWL-RNG-008",
+        "predicted_best_sku": "JWL-RNG-008",
+        "matches_top3": [
+          "JWL-RNG-008",
+          "JWL-RNG-007"
+        ],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": 135000.0
+      },
+      "vision": {
+        "image_file": null,
+        "ground_truth_stones": null,
+        "predicted_stones": null,
+        "absolute_error": null,
+        "confidence": null
+      },
+      "review": {
+        "requires_human_review": false,
+        "flags": []
+      },
+      "errors": [],
+      "latency_ms": 1.47
+    },
+    {
+      "id": "case_04",
+      "name": "Gold Halo Pendant",
+      "category": "pendant",
+      "brief": "18k yellow gold pendant with 9 halo accent diamonds, height 28mm.",
+      "has_image": false,
+      "status_code": 200,
+      "success": true,
+      "extraction": {
+        "predicted": {
+          "product_type": "pendant",
+          "material": "gold",
+          "dimensions_mm": 28.0,
+          "stone_count": 9
+        },
+        "ground_truth": {
+          "product_type": "pendant",
+          "material": "gold",
+          "dimensions_mm": 28.0,
+          "stone_count": 9
+        },
+        "matches": {
+          "product_type": true,
+          "material": true,
+          "dimensions_mm": true,
+          "stone_count": true,
+          "all": true
+        }
+      },
+      "matching": {
+        "expected_sku": "JWL-PND-003",
+        "predicted_best_sku": "JWL-PND-003",
+        "matches_top3": [
+          "JWL-PND-003",
+          "JWL-PND-002",
+          "JWL-PND-001"
+        ],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": 58000.0
+      },
+      "vision": {
+        "image_file": null,
+        "ground_truth_stones": null,
+        "predicted_stones": null,
+        "absolute_error": null,
+        "confidence": null
+      },
+      "review": {
+        "requires_human_review": false,
+        "flags": []
+      },
+      "errors": [],
+      "latency_ms": 2.06
+    },
+    {
+      "id": "case_05",
+      "name": "Silver Solitaire Pendant",
+      "category": "pendant",
+      "brief": "Sterling silver pendant featuring 1 center gemstone, measuring 24mm drop.",
+      "has_image": false,
+      "status_code": 200,
+      "success": true,
+      "extraction": {
+        "predicted": {
+          "product_type": "pendant",
+          "material": "silver",
+          "dimensions_mm": 24.0,
+          "stone_count": 1
+        },
+        "ground_truth": {
+          "product_type": "pendant",
+          "material": "silver",
+          "dimensions_mm": 24.0,
+          "stone_count": 1
+        },
+        "matches": {
+          "product_type": true,
+          "material": true,
+          "dimensions_mm": true,
+          "stone_count": true,
+          "all": true
+        }
+      },
+      "matching": {
+        "expected_sku": "JWL-PND-005",
+        "predicted_best_sku": "JWL-PND-005",
+        "matches_top3": [
+          "JWL-PND-005",
+          "JWL-PND-004",
+          "JWL-PND-006"
+        ],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": 3900.0
+      },
+      "vision": {
+        "image_file": null,
+        "ground_truth_stones": null,
+        "predicted_stones": null,
+        "absolute_error": null,
+        "confidence": null
+      },
+      "review": {
+        "requires_human_review": false,
+        "flags": []
+      },
+      "errors": [],
+      "latency_ms": 1.85
+    },
+    {
+      "id": "case_06",
+      "name": "Classic Gold Chain Necklace",
+      "category": "necklace",
+      "brief": "Classic gold chain necklace, 420mm length, no gemstones or accents.",
+      "has_image": false,
+      "status_code": 200,
+      "success": true,
+      "extraction": {
+        "predicted": {
+          "product_type": "necklace",
+          "material": "gold",
+          "dimensions_mm": 420.0,
+          "stone_count": 0
+        },
+        "ground_truth": {
+          "product_type": "necklace",
+          "material": "gold",
+          "dimensions_mm": 420.0,
+          "stone_count": 0
+        },
+        "matches": {
+          "product_type": true,
+          "material": true,
+          "dimensions_mm": true,
+          "stone_count": true,
+          "all": true
+        }
+      },
+      "matching": {
+        "expected_sku": "JWL-NCK-001",
+        "predicted_best_sku": "JWL-NCK-001",
+        "matches_top3": [
+          "JWL-NCK-001",
+          "JWL-NCK-002",
+          "JWL-NCK-003"
+        ],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": 65000.0
+      },
+      "vision": {
+        "image_file": null,
+        "ground_truth_stones": null,
+        "predicted_stones": null,
+        "absolute_error": null,
+        "confidence": null
+      },
+      "review": {
+        "requires_human_review": false,
+        "flags": []
+      },
+      "errors": [],
+      "latency_ms": 1.44
+    },
+    {
+      "id": "case_07",
+      "name": "Silver Station Necklace",
+      "category": "necklace",
+      "brief": "Sterling silver chain necklace, 450mm length with 3 evenly spaced round stones.",
+      "has_image": true,
+      "status_code": 200,
+      "success": true,
+      "extraction": {
+        "predicted": {
+          "product_type": "necklace",
+          "material": "silver",
+          "dimensions_mm": 450.0,
+          "stone_count": 3
+        },
+        "ground_truth": {
+          "product_type": "necklace",
+          "material": "silver",
+          "dimensions_mm": 450.0,
+          "stone_count": 3
+        },
+        "matches": {
+          "product_type": true,
+          "material": true,
+          "dimensions_mm": true,
+          "stone_count": true,
+          "all": true
+        }
+      },
+      "matching": {
+        "expected_sku": "JWL-NCK-005",
+        "predicted_best_sku": "JWL-NCK-005",
+        "matches_top3": [
+          "JWL-NCK-005",
+          "JWL-NCK-004",
+          "JWL-NCK-006"
+        ],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": 7800.0
+      },
+      "vision": {
+        "image_file": "necklace_station_3.png",
+        "ground_truth_stones": 3,
+        "predicted_stones": 3,
+        "absolute_error": 0,
+        "confidence": "high"
+      },
+      "review": {
+        "requires_human_review": false,
+        "flags": []
+      },
+      "errors": [],
+      "latency_ms": 3.69
+    },
+    {
+      "id": "case_08",
+      "name": "Platinum Statement Choker",
+      "category": "necklace",
+      "brief": "Platinum choker necklace, length 420mm with 36 sparkling diamonds.",
+      "has_image": false,
+      "status_code": 200,
+      "success": true,
+      "extraction": {
+        "predicted": {
+          "product_type": "necklace",
+          "material": "platinum",
+          "dimensions_mm": 420.0,
+          "stone_count": 36
+        },
+        "ground_truth": {
+          "product_type": "necklace",
+          "material": "platinum",
+          "dimensions_mm": 420.0,
+          "stone_count": 36
+        },
+        "matches": {
+          "product_type": true,
+          "material": true,
+          "dimensions_mm": true,
+          "stone_count": true,
+          "all": true
+        }
+      },
+      "matching": {
+        "expected_sku": "JWL-NCK-008",
+        "predicted_best_sku": "JWL-NCK-008",
+        "matches_top3": [
+          "JWL-NCK-008",
+          "JWL-NCK-007"
+        ],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": 195000.0
+      },
+      "vision": {
+        "image_file": null,
+        "ground_truth_stones": null,
+        "predicted_stones": null,
+        "absolute_error": null,
+        "confidence": null
+      },
+      "review": {
+        "requires_human_review": false,
+        "flags": []
+      },
+      "errors": [],
+      "latency_ms": 1.51
+    },
+    {
+      "id": "case_09",
+      "name": "Gold Tennis Bracelet",
+      "category": "bracelet",
+      "brief": "18k gold tennis bracelet, 190mm wrist circumference with 32 small round diamonds.",
+      "has_image": false,
+      "status_code": 200,
+      "success": true,
+      "extraction": {
+        "predicted": {
+          "product_type": "bracelet",
+          "material": "gold",
+          "dimensions_mm": 190.0,
+          "stone_count": 32
+        },
+        "ground_truth": {
+          "product_type": "bracelet",
+          "material": "gold",
+          "dimensions_mm": 190.0,
+          "stone_count": 32
+        },
+        "matches": {
+          "product_type": true,
+          "material": true,
+          "dimensions_mm": true,
+          "stone_count": true,
+          "all": true
+        }
+      },
+      "matching": {
+        "expected_sku": "JWL-BRC-003",
+        "predicted_best_sku": "JWL-BRC-003",
+        "matches_top3": [
+          "JWL-BRC-003",
+          "JWL-BRC-002",
+          "JWL-BRC-001"
+        ],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": 125000.0
+      },
+      "vision": {
+        "image_file": null,
+        "ground_truth_stones": null,
+        "predicted_stones": null,
+        "absolute_error": null,
+        "confidence": null
+      },
+      "review": {
+        "requires_human_review": false,
+        "flags": []
+      },
+      "errors": [],
+      "latency_ms": 1.54
+    },
+    {
+      "id": "case_10",
+      "name": "Silver Minimalist Cuff",
+      "category": "bracelet",
+      "brief": "Solid silver cuff bracelet, 170mm size, minimalist without stones.",
+      "has_image": false,
+      "status_code": 200,
+      "success": true,
+      "extraction": {
+        "predicted": {
+          "product_type": "bracelet",
+          "material": "silver",
+          "dimensions_mm": 170.0,
+          "stone_count": 0
+        },
+        "ground_truth": {
+          "product_type": "bracelet",
+          "material": "silver",
+          "dimensions_mm": 170.0,
+          "stone_count": 0
+        },
+        "matches": {
+          "product_type": true,
+          "material": true,
+          "dimensions_mm": true,
+          "stone_count": true,
+          "all": true
+        }
+      },
+      "matching": {
+        "expected_sku": "JWL-BRC-004",
+        "predicted_best_sku": "JWL-BRC-004",
+        "matches_top3": [
+          "JWL-BRC-004",
+          "JWL-BRC-005",
+          "JWL-BRC-006"
+        ],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": 3200.0
+      },
+      "vision": {
+        "image_file": null,
+        "ground_truth_stones": null,
+        "predicted_stones": null,
+        "absolute_error": null,
+        "confidence": null
+      },
+      "review": {
+        "requires_human_review": false,
+        "flags": []
+      },
+      "errors": [],
+      "latency_ms": 1.44
+    },
+    {
+      "id": "case_11",
+      "name": "Gold Stud Earrings",
+      "category": "earrings",
+      "brief": "Pair of 18k yellow gold stud earrings, 15mm drop with 2 center stones total.",
+      "has_image": false,
+      "status_code": 200,
+      "success": true,
+      "extraction": {
+        "predicted": {
+          "product_type": "earrings",
+          "material": "gold",
+          "dimensions_mm": 15.0,
+          "stone_count": 2
+        },
+        "ground_truth": {
+          "product_type": "earrings",
+          "material": "gold",
+          "dimensions_mm": 15.0,
+          "stone_count": 2
+        },
+        "matches": {
+          "product_type": true,
+          "material": true,
+          "dimensions_mm": true,
+          "stone_count": true,
+          "all": true
+        }
+      },
+      "matching": {
+        "expected_sku": "JWL-EAR-002",
+        "predicted_best_sku": "JWL-EAR-002",
+        "matches_top3": [
+          "JWL-EAR-002",
+          "JWL-EAR-001",
+          "JWL-EAR-003"
+        ],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": 32000.0
+      },
+      "vision": {
+        "image_file": null,
+        "ground_truth_stones": null,
+        "predicted_stones": null,
+        "absolute_error": null,
+        "confidence": null
+      },
+      "review": {
+        "requires_human_review": false,
+        "flags": []
+      },
+      "errors": [],
+      "latency_ms": 1.34
+    },
+    {
+      "id": "case_12",
+      "name": "Platinum Chandelier Earrings",
+      "category": "earrings",
+      "brief": "Platinum chandelier earrings, length 30mm with 22 pave diamonds.",
+      "has_image": false,
+      "status_code": 200,
+      "success": true,
+      "extraction": {
+        "predicted": {
+          "product_type": "earrings",
+          "material": "platinum",
+          "dimensions_mm": 30.0,
+          "stone_count": 22
+        },
+        "ground_truth": {
+          "product_type": "earrings",
+          "material": "platinum",
+          "dimensions_mm": 30.0,
+          "stone_count": 22
+        },
+        "matches": {
+          "product_type": true,
+          "material": true,
+          "dimensions_mm": true,
+          "stone_count": true,
+          "all": true
+        }
+      },
+      "matching": {
+        "expected_sku": "JWL-EAR-008",
+        "predicted_best_sku": "JWL-EAR-008",
+        "matches_top3": [
+          "JWL-EAR-008",
+          "JWL-EAR-007"
+        ],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": 89000.0
+      },
+      "vision": {
+        "image_file": null,
+        "ground_truth_stones": null,
+        "predicted_stones": null,
+        "absolute_error": null,
+        "confidence": null
+      },
+      "review": {
+        "requires_human_review": false,
+        "flags": []
+      },
+      "errors": [],
+      "latency_ms": 1.24
+    },
+    {
+      "id": "case_13",
+      "name": "Incomplete Brief - Missing Dimension",
+      "category": "necklace",
+      "brief": "Customer wants an 18k gold necklace with 5 diamonds, length not specified.",
+      "has_image": true,
+      "status_code": 200,
+      "success": true,
+      "extraction": {
+        "predicted": {
+          "product_type": "necklace",
+          "material": "gold",
+          "dimensions_mm": null,
+          "stone_count": 5
+        },
+        "ground_truth": {
+          "product_type": "necklace",
+          "material": "gold",
+          "dimensions_mm": null,
+          "stone_count": 5
+        },
+        "matches": {
+          "product_type": true,
+          "material": true,
+          "dimensions_mm": true,
+          "stone_count": true,
+          "all": true
+        }
+      },
+      "matching": {
+        "expected_sku": "JWL-NCK-002",
+        "predicted_best_sku": "JWL-NCK-002",
+        "matches_top3": [
+          "JWL-NCK-002",
+          "JWL-NCK-001",
+          "JWL-NCK-003"
+        ],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": 88000.0
+      },
+      "vision": {
+        "image_file": "necklace_five_stones_5.png",
+        "ground_truth_stones": 5,
+        "predicted_stones": 5,
+        "absolute_error": 0,
+        "confidence": "high"
+      },
+      "review": {
+        "requires_human_review": false,
+        "flags": []
+      },
+      "errors": [],
+      "latency_ms": 3.39
+    },
+    {
+      "id": "case_14",
+      "name": "Incomplete Brief - Missing Stone Count",
+      "category": "ring",
+      "brief": "Need a platinum ring, finger size 17.8mm, design details pending.",
+      "has_image": false,
+      "status_code": 200,
+      "success": true,
+      "extraction": {
+        "predicted": {
+          "product_type": "ring",
+          "material": "platinum",
+          "dimensions_mm": 17.8,
+          "stone_count": null
+        },
+        "ground_truth": {
+          "product_type": "ring",
+          "material": "platinum",
+          "dimensions_mm": 17.8,
+          "stone_count": null
+        },
+        "matches": {
+          "product_type": true,
+          "material": true,
+          "dimensions_mm": true,
+          "stone_count": true,
+          "all": true
+        }
+      },
+      "matching": {
+        "expected_sku": "JWL-RNG-007",
+        "predicted_best_sku": "JWL-RNG-007",
+        "matches_top3": [
+          "JWL-RNG-007",
+          "JWL-RNG-008"
+        ],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": 85000.0
+      },
+      "vision": {
+        "image_file": null,
+        "ground_truth_stones": null,
+        "predicted_stones": null,
+        "absolute_error": null,
+        "confidence": null
+      },
+      "review": {
+        "requires_human_review": false,
+        "flags": []
+      },
+      "errors": [],
+      "latency_ms": 2.73
+    },
+    {
+      "id": "case_15",
+      "name": "Ambiguous Brief - Slang & Stone Discrepancy",
+      "category": "ring",
+      "brief": "Looking for an icy finger band in yellow metal, roughly 16.5mm with about fourteen sparkly rocks.",
+      "has_image": true,
+      "status_code": 200,
+      "success": true,
+      "extraction": {
+        "predicted": {
+          "product_type": "ring",
+          "material": "gold",
+          "dimensions_mm": 16.5,
+          "stone_count": 14
+        },
+        "ground_truth": {
+          "product_type": "ring",
+          "material": "gold",
+          "dimensions_mm": 16.5,
+          "stone_count": 14
+        },
+        "matches": {
+          "product_type": true,
+          "material": true,
+          "dimensions_mm": true,
+          "stone_count": true,
+          "all": true
+        }
+      },
+      "matching": {
+        "expected_sku": "JWL-RNG-003",
+        "predicted_best_sku": "JWL-RNG-003",
+        "matches_top3": [
+          "JWL-RNG-003",
+          "JWL-RNG-001",
+          "JWL-RNG-002"
+        ],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": 72000.0
+      },
+      "vision": {
+        "image_file": "ring_eight_stones_8.png",
+        "ground_truth_stones": 8,
+        "predicted_stones": 8,
+        "absolute_error": 0,
+        "confidence": "high"
+      },
+      "review": {
+        "requires_human_review": true,
+        "flags": [
+          "Stone count mismatch: sales brief specified 14 stone(s), but computer vision detected 8 visible stone(s) (discrepancy: 6)."
+        ]
+      },
+      "errors": [],
+      "latency_ms": 4.28
+    },
+    {
+      "id": "case_16",
+      "name": "Clustered Gemstone Pendant Challenge",
+      "category": "pendant",
+      "brief": "Platinum pendant with twelve accent stones, 32mm.",
+      "has_image": true,
+      "status_code": 200,
+      "success": true,
+      "extraction": {
+        "predicted": {
+          "product_type": "pendant",
+          "material": "platinum",
+          "dimensions_mm": 32.0,
+          "stone_count": 12
+        },
+        "ground_truth": {
+          "product_type": "pendant",
+          "material": "platinum",
+          "dimensions_mm": 32.0,
+          "stone_count": 12
+        },
+        "matches": {
+          "product_type": true,
+          "material": true,
+          "dimensions_mm": true,
+          "stone_count": true,
+          "all": true
+        }
+      },
+      "matching": {
+        "expected_sku": "JWL-PND-008",
+        "predicted_best_sku": "JWL-PND-008",
+        "matches_top3": [
+          "JWL-PND-008",
+          "JWL-PND-007"
+        ],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": 98000.0
+      },
+      "vision": {
+        "image_file": "pendant_twelve_clustered_12.png",
+        "ground_truth_stones": 12,
+        "predicted_stones": 12,
+        "absolute_error": 0,
+        "confidence": "high"
+      },
+      "review": {
+        "requires_human_review": false,
+        "flags": []
+      },
+      "errors": [],
+      "latency_ms": 4.55
+    },
+    {
+      "id": "case_17",
+      "name": "No Match - Unsupported Material (Titanium)",
+      "category": "ring",
+      "brief": "Custom titanium wedding ring, 18.0mm diameter, plain band.",
+      "has_image": false,
+      "status_code": 200,
+      "success": false,
+      "extraction": {
+        "predicted": {
+          "product_type": null,
+          "material": null,
+          "dimensions_mm": null,
+          "stone_count": null
+        },
+        "ground_truth": {
+          "product_type": "ring",
+          "material": null,
+          "dimensions_mm": 18.0,
+          "stone_count": 0
+        },
+        "matches": {
+          "product_type": false,
+          "material": true,
+          "dimensions_mm": false,
+          "stone_count": false,
+          "all": false
+        }
+      },
+      "matching": {
+        "expected_sku": null,
+        "predicted_best_sku": null,
+        "matches_top3": [],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": null
+      },
+      "vision": {
+        "image_file": null,
+        "ground_truth_stones": null,
+        "predicted_stones": null,
+        "absolute_error": null,
+        "confidence": null
+      },
+      "review": {
+        "requires_human_review": true,
+        "flags": [
+          "Failed to extract structured specifications from brief.",
+          "No valid specifications extracted to query catalog."
+        ]
+      },
+      "errors": [
+        "Specification extraction failed: ValidationError: 1 validation error for ProductSpecification\nmaterial\n  Value error, Invalid material 'titanium'. Allowed values: ['gold', 'silver', 'platinum'] [type=value_error, input_value='titanium', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error"
+      ],
+      "latency_ms": 1.25
+    },
+    {
+      "id": "case_18",
+      "name": "No Match - Out-of-Range Low Similarity",
+      "category": "bracelet",
+      "brief": "Extra-long platinum ankle bracelet, length 350mm with 15 accent diamonds.",
+      "has_image": false,
+      "status_code": 200,
+      "success": true,
+      "extraction": {
+        "predicted": {
+          "product_type": "bracelet",
+          "material": "platinum",
+          "dimensions_mm": 350.0,
+          "stone_count": 15
+        },
+        "ground_truth": {
+          "product_type": "bracelet",
+          "material": "platinum",
+          "dimensions_mm": 350.0,
+          "stone_count": 15
+        },
+        "matches": {
+          "product_type": true,
+          "material": true,
+          "dimensions_mm": true,
+          "stone_count": true,
+          "all": true
+        }
+      },
+      "matching": {
+        "expected_sku": null,
+        "predicted_best_sku": null,
+        "matches_top3": [
+          "JWL-BRC-007",
+          "JWL-BRC-008"
+        ],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": null
+      },
+      "vision": {
+        "image_file": null,
+        "ground_truth_stones": null,
+        "predicted_stones": null,
+        "absolute_error": null,
+        "confidence": null
+      },
+      "review": {
+        "requires_human_review": true,
+        "flags": [
+          "Inventory matching: No reliable match: Best candidate 'JWL-BRC-007' scored 0.6606, below acceptance threshold 0.7000."
+        ]
+      },
+      "errors": [],
+      "latency_ms": 1.3
+    },
+    {
+      "id": "case_19",
+      "name": "Two-Stone Gold Teardrop Pendant",
+      "category": "pendant",
+      "brief": "Two-stone teardrop pendant in 18k yellow gold, roughly 22mm tall with a pair of diamonds.",
+      "has_image": false,
+      "status_code": 200,
+      "success": true,
+      "extraction": {
+        "predicted": {
+          "product_type": "pendant",
+          "material": "gold",
+          "dimensions_mm": 22.0,
+          "stone_count": 2
+        },
+        "ground_truth": {
+          "product_type": "pendant",
+          "material": "gold",
+          "dimensions_mm": 22.0,
+          "stone_count": 2
+        },
+        "matches": {
+          "product_type": true,
+          "material": true,
+          "dimensions_mm": true,
+          "stone_count": true,
+          "all": true
+        }
+      },
+      "matching": {
+        "expected_sku": "JWL-PND-002",
+        "predicted_best_sku": "JWL-PND-002",
+        "matches_top3": [
+          "JWL-PND-002",
+          "JWL-PND-001",
+          "JWL-PND-003"
+        ],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": 36000.0
+      },
+      "vision": {
+        "image_file": null,
+        "ground_truth_stones": null,
+        "predicted_stones": null,
+        "absolute_error": null,
+        "confidence": null
+      },
+      "review": {
+        "requires_human_review": false,
+        "flags": []
+      },
+      "errors": [],
+      "latency_ms": 1.23
+    },
+    {
+      "id": "case_20",
+      "name": "Silver Plain Collar Choker",
+      "category": "necklace",
+      "brief": "Silver choker necklace, 400mm length, no stones.",
+      "has_image": false,
+      "status_code": 200,
+      "success": true,
+      "extraction": {
+        "predicted": {
+          "product_type": "necklace",
+          "material": "silver",
+          "dimensions_mm": 400.0,
+          "stone_count": 0
+        },
+        "ground_truth": {
+          "product_type": "necklace",
+          "material": "silver",
+          "dimensions_mm": 400.0,
+          "stone_count": 0
+        },
+        "matches": {
+          "product_type": true,
+          "material": true,
+          "dimensions_mm": true,
+          "stone_count": true,
+          "all": true
+        }
+      },
+      "matching": {
+        "expected_sku": "JWL-NCK-004",
+        "predicted_best_sku": "JWL-NCK-004",
+        "matches_top3": [
+          "JWL-NCK-004",
+          "JWL-NCK-005",
+          "JWL-NCK-006"
+        ],
+        "top1_hit": true,
+        "top3_hit": true,
+        "estimated_price_inr": 4500.0
+      },
+      "vision": {
+        "image_file": null,
+        "ground_truth_stones": null,
+        "predicted_stones": null,
+        "absolute_error": null,
+        "confidence": null
+      },
+      "review": {
+        "requires_human_review": false,
+        "flags": []
+      },
+      "errors": [],
+      "latency_ms": 1.25
+    }
+  ]
+}

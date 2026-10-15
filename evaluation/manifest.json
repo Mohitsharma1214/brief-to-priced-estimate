@@ -1,0 +1,134 @@
+[
+  {
+    "id": "CASE-CV-01",
+    "name": "ring_plain_0.png",
+    "ground_truth_visible_stones": 0,
+    "setting_type": "plain_band",
+    "background": "dark",
+    "is_photograph": false,
+    "ambiguous": false,
+    "exclusion_reason": null,
+    "description": "Plain gold ring band with zero stones on dark synthetic background."
+  },
+  {
+    "id": "CASE-CV-02",
+    "name": "ring_solitaire_1.png",
+    "ground_truth_visible_stones": 1,
+    "setting_type": "solitaire",
+    "background": "dark",
+    "is_photograph": false,
+    "ambiguous": false,
+    "exclusion_reason": null,
+    "description": "Solitaire ring with one central round gemstone on dark synthetic background."
+  },
+  {
+    "id": "CASE-CV-03",
+    "name": "stud_earrings_light_2.png",
+    "ground_truth_visible_stones": 2,
+    "setting_type": "stud_earrings",
+    "background": "light_studio",
+    "is_photograph": false,
+    "ambiguous": false,
+    "exclusion_reason": null,
+    "description": "Pair of diamond stud earrings with two clearly separated circular stones on white studio background."
+  },
+  {
+    "id": "CASE-CV-04",
+    "name": "necklace_station_3.png",
+    "ground_truth_visible_stones": 3,
+    "setting_type": "station_necklace",
+    "background": "dark",
+    "is_photograph": false,
+    "ambiguous": false,
+    "exclusion_reason": null,
+    "description": "Three separated bezel-set stones spaced along a necklace chain on dark background."
+  },
+  {
+    "id": "CASE-CV-05",
+    "name": "trilogy_ring_light_3.png",
+    "ground_truth_visible_stones": 3,
+    "setting_type": "three_stone_ring",
+    "background": "light_studio",
+    "is_photograph": false,
+    "ambiguous": false,
+    "exclusion_reason": null,
+    "description": "Three-stone trilogy ring with one center and two side stones on polished gold shank on white studio background."
+  },
+  {
+    "id": "CASE-CV-06",
+    "name": "necklace_five_stones_5.png",
+    "ground_truth_visible_stones": 5,
+    "setting_type": "row_necklace",
+    "background": "dark",
+    "is_photograph": false,
+    "ambiguous": false,
+    "exclusion_reason": null,
+    "description": "Five separated circular gemstones in a horizontal row on dark background."
+  },
+  {
+    "id": "CASE-CV-07",
+    "name": "gold_ring_five_diamonds.jpeg",
+    "ground_truth_visible_stones": 5,
+    "setting_type": "prong_row_ring",
+    "background": "light_studio",
+    "is_photograph": true,
+    "ambiguous": false,
+    "exclusion_reason": null,
+    "description": "Real studio photograph of a yellow gold band with 5 round diamonds in a row with realistic metallic reflections and shadows."
+  },
+  {
+    "id": "CASE-CV-08",
+    "name": "ring_eight_stones_8.png",
+    "ground_truth_visible_stones": 8,
+    "setting_type": "eternity_band",
+    "background": "dark",
+    "is_photograph": false,
+    "ambiguous": false,
+    "exclusion_reason": null,
+    "description": "Eight separated circular gemstones set around a ring eternity pattern on dark background."
+  },
+  {
+    "id": "CASE-CV-09",
+    "name": "pendant_twelve_clustered_12.png",
+    "ground_truth_visible_stones": 12,
+    "setting_type": "cluster_pendant",
+    "background": "dark",
+    "is_photograph": false,
+    "ambiguous": false,
+    "exclusion_reason": null,
+    "description": "Cluster pendant with 12 touching gemstones forming a tight circular cluster on dark background."
+  },
+  {
+    "id": "CASE-CV-10",
+    "name": "ring_plain_glare_light_0.png",
+    "ground_truth_visible_stones": 0,
+    "setting_type": "plain_band_with_glare",
+    "background": "light_studio",
+    "is_photograph": false,
+    "ambiguous": false,
+    "exclusion_reason": null,
+    "description": "Plain yellow gold wedding band on white studio background with strong specular highlights along the shank and zero gemstones (false-positive benchmark)."
+  },
+  {
+    "id": "CASE-CV-11",
+    "name": "pendant_pear_halo_diamond.jpeg",
+    "ground_truth_visible_stones": 23,
+    "setting_type": "halo_pendant",
+    "background": "light_studio",
+    "is_photograph": true,
+    "ambiguous": false,
+    "exclusion_reason": null,
+    "description": "Real photograph of an intricate gold pendant with 1 large central pear-cut gemstone surrounded by a dense pavé halo of 22 small diamonds."
+  },
+  {
+    "id": "CASE-CV-12",
+    "name": "halo_pave_ambiguous_19.png",
+    "ground_truth_visible_stones": 19,
+    "setting_type": "dense_pave_bloom",
+    "background": "light_studio",
+    "is_photograph": false,
+    "ambiguous": true,
+    "exclusion_reason": "Severe optical bloom and glare cause adjacent gemstone boundaries to blend into ambiguous continuous regions; ground truth count cannot be reliably verified without 3D CAD/microscopy.",
+    "description": "Dense micro-pavé ring with intense optical glare and optical blooming causing gemstone boundaries to bleed together; ground truth count is visually ambiguous, excluded from primary MAE and flagged for human review."
+  }
+]

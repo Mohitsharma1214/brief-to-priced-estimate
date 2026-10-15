@@ -1,0 +1,13 @@
+id,filename,setting_type,background,ground_truth,baseline_pred,baseline_error,improved_pred,improved_error,confidence,requires_review,method,ambiguous
+CASE-CV-01,ring_plain_0.png,plain_band,dark,0,0,0,0,0,low,True,solid_uniform_detector,False
+CASE-CV-02,ring_solitaire_1.png,solitaire,dark,1,1,0,1,0,high,False,dark_bg_distance_transform,False
+CASE-CV-03,stud_earrings_light_2.png,stud_earrings,light_studio,2,16,14,2,0,medium,True,circular_faceted_analysis,False
+CASE-CV-04,necklace_station_3.png,station_necklace,dark,3,3,0,3,0,high,False,dark_bg_distance_transform,False
+CASE-CV-05,trilogy_ring_light_3.png,three_stone_ring,light_studio,3,8,5,3,0,medium,True,circular_faceted_analysis,False
+CASE-CV-06,necklace_five_stones_5.png,row_necklace,dark,5,5,0,5,0,high,False,dark_bg_distance_transform,False
+CASE-CV-07,gold_ring_five_diamonds.jpeg,prong_row_ring,light_studio,5,111,106,5,0,medium,True,circular_faceted_analysis,False
+CASE-CV-08,ring_eight_stones_8.png,eternity_band,dark,8,8,0,8,0,high,False,dark_bg_distance_transform,False
+CASE-CV-09,pendant_twelve_clustered_12.png,cluster_pendant,dark,12,10,2,12,0,high,False,dark_bg_distance_transform,False
+CASE-CV-10,ring_plain_glare_light_0.png,plain_band_with_glare,light_studio,0,0,0,0,0,low,True,circular_faceted_analysis,False
+CASE-CV-11,pendant_pear_halo_diamond.jpeg,halo_pendant,light_studio,23,5,18,33,10,medium,True,halo_cluster_segmentation,False
+CASE-CV-12,halo_pave_ambiguous_19.png,dense_pave_bloom,light_studio,19,12,7,0,19,low,True,circular_faceted_analysis,True

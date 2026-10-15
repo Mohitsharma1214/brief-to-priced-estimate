@@ -1,0 +1,322 @@
+[
+  {
+    "sku": "JWL-RNG-001",
+    "product_type": "ring",
+    "material": "gold",
+    "dimensions_mm": 17.3,
+    "stone_count": 0,
+    "price_inr": 24500.0
+  },
+  {
+    "sku": "JWL-RNG-002",
+    "product_type": "ring",
+    "material": "gold",
+    "dimensions_mm": 18.1,
+    "stone_count": 1,
+    "price_inr": 48000.0
+  },
+  {
+    "sku": "JWL-RNG-003",
+    "product_type": "ring",
+    "material": "gold",
+    "dimensions_mm": 16.5,
+    "stone_count": 14,
+    "price_inr": 72000.0
+  },
+  {
+    "sku": "JWL-RNG-004",
+    "product_type": "ring",
+    "material": "silver",
+    "dimensions_mm": 17.0,
+    "stone_count": 0,
+    "price_inr": 2800.0
+  },
+  {
+    "sku": "JWL-RNG-005",
+    "product_type": "ring",
+    "material": "silver",
+    "dimensions_mm": 18.5,
+    "stone_count": 1,
+    "price_inr": 4500.0
+  },
+  {
+    "sku": "JWL-RNG-006",
+    "product_type": "ring",
+    "material": "silver",
+    "dimensions_mm": 19.2,
+    "stone_count": 8,
+    "price_inr": 7200.0
+  },
+  {
+    "sku": "JWL-RNG-007",
+    "product_type": "ring",
+    "material": "platinum",
+    "dimensions_mm": 17.8,
+    "stone_count": 1,
+    "price_inr": 85000.0
+  },
+  {
+    "sku": "JWL-RNG-008",
+    "product_type": "ring",
+    "material": "platinum",
+    "dimensions_mm": 18.9,
+    "stone_count": 24,
+    "price_inr": 135000.0
+  },
+  {
+    "sku": "JWL-PND-001",
+    "product_type": "pendant",
+    "material": "gold",
+    "dimensions_mm": 18.0,
+    "stone_count": 0,
+    "price_inr": 19500.0
+  },
+  {
+    "sku": "JWL-PND-002",
+    "product_type": "pendant",
+    "material": "gold",
+    "dimensions_mm": 22.5,
+    "stone_count": 1,
+    "price_inr": 36000.0
+  },
+  {
+    "sku": "JWL-PND-003",
+    "product_type": "pendant",
+    "material": "gold",
+    "dimensions_mm": 28.0,
+    "stone_count": 9,
+    "price_inr": 58000.0
+  },
+  {
+    "sku": "JWL-PND-004",
+    "product_type": "pendant",
+    "material": "silver",
+    "dimensions_mm": 16.0,
+    "stone_count": 0,
+    "price_inr": 2200.0
+  },
+  {
+    "sku": "JWL-PND-005",
+    "product_type": "pendant",
+    "material": "silver",
+    "dimensions_mm": 24.0,
+    "stone_count": 1,
+    "price_inr": 3900.0
+  },
+  {
+    "sku": "JWL-PND-006",
+    "product_type": "pendant",
+    "material": "silver",
+    "dimensions_mm": 30.5,
+    "stone_count": 12,
+    "price_inr": 6800.0
+  },
+  {
+    "sku": "JWL-PND-007",
+    "product_type": "pendant",
+    "material": "platinum",
+    "dimensions_mm": 20.0,
+    "stone_count": 1,
+    "price_inr": 52000.0
+  },
+  {
+    "sku": "JWL-PND-008",
+    "product_type": "pendant",
+    "material": "platinum",
+    "dimensions_mm": 32.0,
+    "stone_count": 16,
+    "price_inr": 98000.0
+  },
+  {
+    "sku": "JWL-NCK-001",
+    "product_type": "necklace",
+    "material": "gold",
+    "dimensions_mm": 420.0,
+    "stone_count": 0,
+    "price_inr": 65000.0
+  },
+  {
+    "sku": "JWL-NCK-002",
+    "product_type": "necklace",
+    "material": "gold",
+    "dimensions_mm": 450.0,
+    "stone_count": 5,
+    "price_inr": 88000.0
+  },
+  {
+    "sku": "JWL-NCK-003",
+    "product_type": "necklace",
+    "material": "gold",
+    "dimensions_mm": 500.0,
+    "stone_count": 28,
+    "price_inr": 145000.0
+  },
+  {
+    "sku": "JWL-NCK-004",
+    "product_type": "necklace",
+    "material": "silver",
+    "dimensions_mm": 400.0,
+    "stone_count": 0,
+    "price_inr": 4500.0
+  },
+  {
+    "sku": "JWL-NCK-005",
+    "product_type": "necklace",
+    "material": "silver",
+    "dimensions_mm": 450.0,
+    "stone_count": 3,
+    "price_inr": 7800.0
+  },
+  {
+    "sku": "JWL-NCK-006",
+    "product_type": "necklace",
+    "material": "silver",
+    "dimensions_mm": 480.0,
+    "stone_count": 18,
+    "price_inr": 12500.0
+  },
+  {
+    "sku": "JWL-NCK-007",
+    "product_type": "necklace",
+    "material": "platinum",
+    "dimensions_mm": 450.0,
+    "stone_count": 0,
+    "price_inr": 95000.0
+  },
+  {
+    "sku": "JWL-NCK-008",
+    "product_type": "necklace",
+    "material": "platinum",
+    "dimensions_mm": 420.0,
+    "stone_count": 36,
+    "price_inr": 195000.0
+  },
+  {
+    "sku": "JWL-BRC-001",
+    "product_type": "bracelet",
+    "material": "gold",
+    "dimensions_mm": 175.0,
+    "stone_count": 0,
+    "price_inr": 42000.0
+  },
+  {
+    "sku": "JWL-BRC-002",
+    "product_type": "bracelet",
+    "material": "gold",
+    "dimensions_mm": 180.0,
+    "stone_count": 6,
+    "price_inr": 68000.0
+  },
+  {
+    "sku": "JWL-BRC-003",
+    "product_type": "bracelet",
+    "material": "gold",
+    "dimensions_mm": 190.0,
+    "stone_count": 32,
+    "price_inr": 125000.0
+  },
+  {
+    "sku": "JWL-BRC-004",
+    "product_type": "bracelet",
+    "material": "silver",
+    "dimensions_mm": 170.0,
+    "stone_count": 0,
+    "price_inr": 3200.0
+  },
+  {
+    "sku": "JWL-BRC-005",
+    "product_type": "bracelet",
+    "material": "silver",
+    "dimensions_mm": 185.0,
+    "stone_count": 4,
+    "price_inr": 5600.0
+  },
+  {
+    "sku": "JWL-BRC-006",
+    "product_type": "bracelet",
+    "material": "silver",
+    "dimensions_mm": 195.0,
+    "stone_count": 20,
+    "price_inr": 9800.0
+  },
+  {
+    "sku": "JWL-BRC-007",
+    "product_type": "bracelet",
+    "material": "platinum",
+    "dimensions_mm": 180.0,
+    "stone_count": 0,
+    "price_inr": 78000.0
+  },
+  {
+    "sku": "JWL-BRC-008",
+    "product_type": "bracelet",
+    "material": "platinum",
+    "dimensions_mm": 175.0,
+    "stone_count": 40,
+    "price_inr": 175000.0
+  },
+  {
+    "sku": "JWL-EAR-001",
+    "product_type": "earrings",
+    "material": "gold",
+    "dimensions_mm": 12.0,
+    "stone_count": 0,
+    "price_inr": 18500.0
+  },
+  {
+    "sku": "JWL-EAR-002",
+    "product_type": "earrings",
+    "material": "gold",
+    "dimensions_mm": 15.0,
+    "stone_count": 2,
+    "price_inr": 32000.0
+  },
+  {
+    "sku": "JWL-EAR-003",
+    "product_type": "earrings",
+    "material": "gold",
+    "dimensions_mm": 35.0,
+    "stone_count": 16,
+    "price_inr": 64000.0
+  },
+  {
+    "sku": "JWL-EAR-004",
+    "product_type": "earrings",
+    "material": "silver",
+    "dimensions_mm": 10.0,
+    "stone_count": 0,
+    "price_inr": 1800.0
+  },
+  {
+    "sku": "JWL-EAR-005",
+    "product_type": "earrings",
+    "material": "silver",
+    "dimensions_mm": 18.0,
+    "stone_count": 2,
+    "price_inr": 3400.0
+  },
+  {
+    "sku": "JWL-EAR-006",
+    "product_type": "earrings",
+    "material": "silver",
+    "dimensions_mm": 28.0,
+    "stone_count": 10,
+    "price_inr": 6200.0
+  },
+  {
+    "sku": "JWL-EAR-007",
+    "product_type": "earrings",
+    "material": "platinum",
+    "dimensions_mm": 14.0,
+    "stone_count": 2,
+    "price_inr": 45000.0
+  },
+  {
+    "sku": "JWL-EAR-008",
+    "product_type": "earrings",
+    "material": "platinum",
+    "dimensions_mm": 30.0,
+    "stone_count": 22,
+    "price_inr": 89000.0
+  }
+]
